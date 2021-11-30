@@ -17,8 +17,12 @@ from django.contrib import admin
 from django.urls import path
 
 from webapp.views import bienvenida
+from sistema_venta.views import detalle_funcion, detalle_boleto, nuevo_boleto
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', bienvenida),
+    path('', bienvenida, name='index'),
+    path('detalle_funcion/<int:id>', detalle_funcion),
+    path('detalle_boleto/<int:id>', detalle_boleto),
+    path('nuevo_boleto/', nuevo_boleto),
 ]
