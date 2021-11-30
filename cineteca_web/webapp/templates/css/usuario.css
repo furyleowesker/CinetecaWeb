@@ -1,0 +1,124 @@
+.wrapper
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.wrapper_regresar
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(10px, auto);
+}
+
+.texto_regresar
+{
+    grid-column: 2;
+    grid-row: 1;
+    align-self: top;
+    justify-self: left;
+}
+.container_button_regresar
+{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: top;
+    justify-self: right;
+    color: white;
+    font-family: Open Sans;
+    font-size: 18px;
+    margin: 5px 5px;
+}
+
+.button_regresar
+{
+    background-image: url('flecha.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    background-color: #004aad;
+    border: none;
+    border-radius: 8px;
+    padding: 25px 25px;
+}
+.button_regresar:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.container_button_boleto
+{
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+}
+
+.texto_boleto
+{
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    justify-self: left;
+}
+
+.button_boleto
+{
+    background-image: url('boleto.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    background-color: #001c73;
+    border: none;
+    border-radius: 8px;
+    padding: 100px 100px;
+}
+
+.button_boleto:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.container_button_dulceria
+{
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center;
+    color: white;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+}
+
+.texto_dulceria
+{
+    grid-column: 3;
+    grid-row: 3;
+    align-self: center;
+    justify-self: left;
+}
+
+.button_dulceria
+{
+    background-image: url('dulceria.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    background-color: #001c73;
+    border: none;
+    border-radius: 8px;
+    padding: 100px 100px;
+}
+
+.button_dulceria:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

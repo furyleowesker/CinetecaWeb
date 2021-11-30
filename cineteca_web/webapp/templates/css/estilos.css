@@ -1,0 +1,11 @@
+body
+{
+    background-color: #004aad;
+}
+
+p, div, a, h1
+{
+    color: white;
+    font-family: Open Sans;
+    font-size: 18px;
+}

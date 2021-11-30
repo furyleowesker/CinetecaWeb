@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from webapp.views import bienvenida
+from webapp.views import bienvenida, login, usuario, cartelera, dulceria
 from sistema_venta.views import detalle_funcion, detalle_boleto, nuevo_boleto
 
 urlpatterns = [
@@ -25,4 +25,8 @@ urlpatterns = [
     path('detalle_funcion/<int:id>', detalle_funcion),
     path('detalle_boleto/<int:id>', detalle_boleto),
     path('nuevo_boleto/', nuevo_boleto),
+    path('login/', login),
+    path('usuario/', usuario),
+    path('cartelera/', cartelera),
+    path('dulceria/', dulceria),
 ]

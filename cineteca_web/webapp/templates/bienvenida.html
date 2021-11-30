@@ -1,3 +1,4 @@
+{% load static from static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cineteca Web</title>
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
 </head>
 <body>
     <h1>¡Bienvenido a la pagina de Cineteca!</h1>
@@ -13,8 +15,12 @@
             Numero de Boletos: {{numero_boletos}}
         </div>
         <hr/>
-        <div>
+        <p>
             <a href="nuevo_boleto/">Nuevo Boleto</a>
+        </p>
+        <hr/>
+        <div>
+            <a href="/login">Ir a login page</a>
         </div>
         <hr/>
         <div>

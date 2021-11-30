@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Usuario</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'usuario.css' %}" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="wrapper_regresar">
+            <div class="container_button_regresar">
+                <a href="/login"><button type="button" class="button_regresar"></button></a>
+            </div>
+            <div class="texto_regresar"><p>Regresar</p></div>
+        </div>
+
+        <div class="container_button_boleto">
+            <a href="/cartelera"><button type="button" class="button_boleto"></button></a>
+        </div>
+        <div class="texto_boleto"><p>Boletos</p></div>
+        <div class="container_button_dulceria">
+            <a href="/dulceria"><button type="button" class="button_dulceria"></button></a>
+        </div>
+        <div class="texto_dulceria"><p>Dulceria</p></div>
+    </div>
+
+
+</body>
+
+</html>
